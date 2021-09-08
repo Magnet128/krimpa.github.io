@@ -176,7 +176,7 @@
 
 .middle_area {
   float: left;
-  height: 1000px;
+  height: 1200px;
   width: 85%;
   margin-top: 2%;
   padding-left: 15%;
@@ -294,6 +294,19 @@
 .contetn_detail {
   width: 100%;
 }
+.logo_image {
+  /* float: right; */
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* width: 30%; */
+}
+
+.logo_image img {
+  margin-right: 2%;
+  width: 40%;
+}
 
 .content_detail_list {
   list-style: none;
@@ -310,6 +323,8 @@
   padding-bottom: 2%;
 }
 .detail_bottom {
+  display: flex;
+  /* float: left; */
   width: 95%;
   text-align: right;
   font-size: 20px;
