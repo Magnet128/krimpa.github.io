@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>한국소재물성평가원</title>    
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- slick 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+
+</head>
+<body>
+    <body style="overflow-x:hidden">
+	<div id="wrap">
+		<div class="header">
+            <div class="top-menu">
+                <div class="top-menu-area">
+                    <ul>
+                        <li><a href="#">SITEMAP</a></li>
+                        <li><a href="#">HOME</a></li>   
+                        <li><a href="#"> </a></li>                        
+                    </ul>
+                </div>                
+            </div>
+            <div class="menu_area">
+                <div class="logo" onclick="location.href='index.html'">
+                    <img src="logo.png" alt="logo" width="200px" >
+                </div>
+                <div class="menu">
+                    <div class="menu_title">
+                        <ul>
+                            <li class="title1" style="font-size: larger;"><a href="company_info.html"><b>회사소개</b></a>
+                                <ul class="dropdown-sub">
+                                    <li><a href="company_info.html">인사말</a></li>
+                                    <li><a href="company_info2.html">오시는 길</a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <!-- <li><a href="#"> </a></li> -->
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li class="title2" style="font-size: larger;"><a href="business1.html"><b>사업분야</b></a>
+                                <ul class="dropdown-sub">
+                                    <li><a href="business1.html">Failure Analysis</a></li>
+                                    <li><a href="business2.html">XPS</a></li>
+                                    <li><a href="business3.html">SIMS</a></li>
+                                    <!-- <li><a href="#">AES</a></li> -->
+                                    <li><a href="business4.html">공동연구</a></li>
+                                    <li><a href="business5.html">전문인력 위탁교육</a></li>
+                                    <li><a href="#"></a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="title3" style="font-size: larger;"><a href="analysis1.html"><b>분석의뢰</b></a>
+                                <ul class="dropdown-sub">
+                                    <li><a href="analysis1.html">분석절차</a></li>
+                                    <li><a href="analysis2.html">분석요금</a></li>
+                                    <li><a href="analysis3.html">분석신청</a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <!-- <li><a href="#"> </a></li> -->
+                                    
+                                    
+                                </ul>
+                            </li>
+                            <li class="title4" style="font-size: larger;"><a href="support1.html"><b>고객지원</b></a>
+                                <ul id="ds1" class="dropdown-sub" >
+                                    <li><a href="support1.html">공지사항</a></li>
+                                    <li><a href="support2.html">온라인 문의</a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <li><a href="#"> </a></li>
+                                    <!-- <li><a href="#"> </a></li> -->
+                                    
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>                          
+             
+                </div>
+            </div>
+            
+        </div>
+        <div class="slide-img">
+            <div class="slider-div">
+                <div><img src="image/1-1.jpg"></div>
+                <div><img src="image/2-2.jpg"></div>
+                <div><img src="image/3-3.jpg"></div>
+              </div>
+              <script>
+                $(function(){
+                  $('.slider-div').slick({
+                      slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
+                      infinite : true, 	//무한 반복 옵션	 
+                      slidesToShow : 1,		// 한 화면에 보여질 컨텐츠 개수
+                      slidesToScroll : 1,		//스크롤 한번에 움직일 컨텐츠 개수
+                      speed : 1000,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+                      arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+                      dots : true, 		// 스크롤바 아래 점으로 페이지네이션 여부
+                      autoplay : true,			// 자동 스크롤 사용 여부
+                      autoplaySpeed : 8000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                      pauseOnHover : true,		// 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+                      vertical : false,		// 세로 방향 슬라이드 옵션
+                    //   prevArrow : "<button type='button' class='slick-prev'>Previous</button>",		// 이전 화살표 모양 설정
+                    //   nextArrow : "<button type='button' class='slick-next'>Next</button>",		// 다음 화살표 모양 설정
+                      dotsClass : "slick-dots", 	//아래 나오는 페이지네이션(점) css class 지정
+                      draggable : true, 	//드래그 가능 여부 
+                      
+                      responsive: [ // 반응형 웹 구현 옵션
+                            { 
+        
+                              breakpoint: 1024, //화면 사이즈 1024px
+                              settings: {
+                                  //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                  slidesToShow:1 
+                              } 
+                          },
+                          {  
+                              breakpoint: 960, //화면 사이즈 960px
+                              settings: {
+                                  //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                  slidesToShow:1 
+                              } 
+                          },
+                          { 
+                              breakpoint: 768, //화면 사이즈 768px
+                              settings: {	
+                                  //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                                  slidesToShow:1 
+                              } 
+                          }
+                      ]
+        
+                  });
+                })
+          </script>
+        </div>
+        <div class="middle_area">
+            <div class="call_area">
+                <div class=call_area_title>
+                    <h3>고객상담문의</h3>
+                </div>
+                <div class=call_area_text>
+                    031-889-0177
+                </div>
+                <div class=call_area_text2>
+                    상담시간<br>
+                    평일 오전 9시 ~ 오후 6시<br>
+                    (주말, 공휴일 휴무)
+                </div>
+                <div class=call_area_button>
+                    <button type="button" onclick="location.href='support2.html'">온라인문의</button>
+                </div>                
+            </div>
+            <div class="analysis_area">
+                <ul>
+                    <li class="analysis_area_btn"><button type="button" onclick="location.href='#'"><img src="image/list.png"> 분석의뢰 절차</button></li>
+                    <li class="analysis_area_btn"><button type="button" onclick="location.href='#'"><img src="image/won.png"> 분석요금</li>
+                    <li class="analysis_area_btn"><button type="button" onclick="location.href='#'"><img src="image/fluctuation.png"> 분석신청</li>
+                </ul>
+            </div>
+            <div class="notice_area">
+                <div class="notice_title_area">
+                    <div ><h2 class="notice_title">공지사항<a href="#" class="notice_more_link">+</a></h2></div>
+                    
+                </div>             
+                
+                <div class="notice_content_area"></div>
+                
+            </div>
+        </div>
+<!--         
+		<aside></aside>
+		<section></section>
+		<article></article> -->
+		<footer>
+            <div class="footer_logo"><img src="logo.png" alt="logo" width="200px"></div>
+            <div class="footer_text">
+                <div>
+                    <br>
+                    한국소재물성평가원 / 경기도 용인시 기흥구 농서동 455 원희캐슬 기흥서천 712호<br>
+
+                    사업자 등록번호 : 759-26-00120 / 대표자 : 이재철 / 전화 : 031-889-0177 / E-mail : ljc0415@naver.com<br>
+
+                    Copyright (C) KRIMPA All Right Reserved.
+                </div>            
+                    
+            </div>
+        </footer>
+	</div>
+</body>
+</html>
+
