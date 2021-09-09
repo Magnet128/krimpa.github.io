@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>한국소재물성평가원</title>    
     <link rel="stylesheet" href="css/support.css"/>
-    <!-- <link rel="stylesheet" href="css/table.css"/> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  
 
@@ -106,8 +106,8 @@
                     </div>
                     <div class="sidemenu_sub">
                         <ul>
-                            <li><button class="sidemenu_button_checked" type="button" onclick="location.href='support1.html'">공지사항</button></li>
-                            <li><button class="sidemenu_button_unchecked" type="button" onclick="location.href='support2.html'">온라인문의</button></li>                            
+                            <li><button class="sidemenu_button_unchecked" type="button" onclick="location.href='support1.html'">공지사항</button></li>
+                            <li><button class="sidemenu_button_checked" type="button" onclick="location.href='support2.html'">온라인문의</button></li>                            
 
                         </ul>
                     </div>
@@ -133,50 +133,52 @@
                 <div class ="content_top_nav">
                     <a href="index.html">HOME</a> ＞
                     <a href="support1.html">고객지원</a> ＞
-                    <a href="support1.html">공지사항</a>
+                    <a href="support2.html">온라인 문의</a>
                 </div>
                 <div class="contetn_detail">
-                    <h3 class="content_detail_title"><br>공지사항</h3>
-                    <table class="table" rules="none">
-                        <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>작성날짜</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="table_title">테스트1</td>
-                                <td>작성자</td>
-                                <td>21.09.09</td>
-                            </tr>     
-                             <!-- <tr>
-                                <td>1</td>
-                                <td class="table_title">테스트2wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</td>
-                                <td>작성자</td>
-                                <td>21.09.09</td>
-                            </tr>    -->                           
-                                    
-                        </tbody>
-                    </table>    
-                    <div class="button_area">                                                               
-                        <button type="button" class="btn_write" onclick="location.href='analysis3_order.html'">신청서작성</button>                        
-                    </div>                
-                    <div class="pagebtn">
-                        <ul class="pagination">
-                            <li><a href="#">◀</a></li>
-                            <li><a href="#">1</a></li>
-                            <!-- <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">7</a></li> -->
-                            <li><a href="#">▶</a></li>
-                        </ul> 
+                    <h3 class="content_detail_title"><br>온라인문의</h3>
+                    <div class="content_form_area">
+                        <form class="question_form" action="#" method="post">
+                            <br> 
+                            <table class="form_table">
+                                <tr>
+                                    <th><label>이름</label></th>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="이름"></td>
+                                
+                                    <th><label>비밀번호</label></th>
+                                    <td><input type="password" class="form_requierd" autocomplete="off" type="text"value required placeholder="비밀번호"></td>
+                                </tr>                                
+                                <tr>
+                                    <th><label>회사</label></th>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="회사"></td>
+                                
+                                    <th><label>전화번호</label></th>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="전화번호"></td>
+                                </tr>
+                                <tr>
+                                    <th><label>이메일</label></th>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="이메일"></td>
+                                   
+                                   
+                                </tr>                                
+                            </table>
+                            <br> 
+                            <table class="form_table">
+                                <tr>
+                                    <th><label>제목</label></th>
+                                    <td  class="form_title"><input class="form_requierd2" autocomplete="off" type="text"value required placeholder="제목"></td>
+                                </tr>
+                                <tr>
+                                    <th><label>내용</label></th>
+                                    <td colspan="3"><textarea class="form_requierd2"  rows="20" cols="80" type="text"value required placeholder="내용"></textarea></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="button_area">                                                               
+                                <button type="submit" class="btn_submit">작성완료</button>
+                                <button type="button" class="btn_cancel" onclick="location.href='support2.html'">취소</button>
+                            </div>
+                        </form>
                     </div>
                     
                 </div>
