@@ -16,12 +16,13 @@
 }
 
 .logo {
+  display: flex;
   float: left;
   margin-left: 7%;
   /* padding-top: 1%; */
-  background: #ffffff;
+  /* background: #ffffff; */
   position: absolute;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 .top-menu {
   background-color: rgb(70, 70, 170);
