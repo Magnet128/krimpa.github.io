@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<title>한국소재물성평가원</title>    
-    <link rel="stylesheet" href="css/support.css"/>
+    <meta charset="UTF-8">
+    <title>한국소재물성평가원</title>
+    <link rel="stylesheet" href="css/support.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
 
-<!-- slick 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
-    
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 
 </head>
-<body>    
-    <body style="overflow-x:hidden">
-	<div id="wrap">
-		<div class="header">
+
+<body style="overflow-x:hidden">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDKkOKCT-hb68OEnzkLcEmGxqKqwB6MKIc",
+            authDomain: "krimpa-fcb08.firebaseapp.com",
+            projectId: "krimpa-fcb08",
+            storageBucket: "krimpa-fcb08.appspot.com",
+            messagingSenderId: "276850076529",
+            appId: "1:276850076529:web:99f396fe3bcd8b0132e4d0",
+            measurementId: "G-D4TW7KK9HJ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <div id="wrap">
+        <div class="header">
             <div class="top-menu">
                 <div class="top-menu-area">
                     <ul>
                         <li><a href="#">SITEMAP</a></li>
-                        <li><a href="index.html">HOME</a></li>   
-                        <li><a href="#"> </a></li>                        
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#"> </a></li>
                     </ul>
-                </div>                
+                </div>
             </div>
             <div class="menu_area">
                 <div class="logo" onclick="location.href='index.html'">
@@ -46,10 +70,10 @@
                                     <li><a href="#"> </a></li>
                                     <li><a href="#"> </a></li>
                                     <!-- <li><a href="#"> </a></li> -->
-                                    
+
                                 </ul>
                             </li>
-                            
+
                             <li class="title2" style="font-size: larger;"><a href="business1.html"><b>사업분야</b></a>
                                 <ul class="dropdown-sub">
                                     <li><a href="business1.html">Failure Analysis</a></li>
@@ -59,7 +83,7 @@
                                     <li><a href="business4.html">공동연구</a></li>
                                     <li><a href="business5.html">전문인력 위탁교육</a></li>
                                     <li><a href="#"></a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="title3" style="font-size: larger;"><a href="analysis1.html"><b>분석의뢰</b></a>
@@ -71,12 +95,12 @@
                                     <li><a href="#"> </a></li>
                                     <li><a href="#"> </a></li>
                                     <!-- <li><a href="#"> </a></li> -->
-                                    
-                                    
+
+
                                 </ul>
                             </li>
                             <li class="title4" style="font-size: larger;"><a href="support1.html"><b>고객지원</b></a>
-                                <ul id="ds1" class="dropdown-sub" >
+                                <ul id="ds1" class="dropdown-sub">
                                     <li><a href="support1.html">공지사항</a></li>
                                     <li><a href="support2.html">온라인 문의</a></li>
                                     <li><a href="#"> </a></li>
@@ -84,16 +108,16 @@
                                     <li><a href="#"> </a></li>
                                     <li><a href="#"> </a></li>
                                     <!-- <li><a href="#"> </a></li> -->
-                                    
-                                    
+
+
                                 </ul>
                             </li>
                         </ul>
-                    </div>                  
-             
+                    </div>
+
                 </div>
             </div>
-            
+
         </div>
         <div class="top_image">
             <img src="image/2-2.jpg">
@@ -106,8 +130,10 @@
                     </div>
                     <div class="sidemenu_sub">
                         <ul>
-                            <li><button class="sidemenu_button_unchecked" type="button" onclick="location.href='support1.html'">공지사항</button></li>
-                            <li><button class="sidemenu_button_checked" type="button" onclick="location.href='support2.html'">온라인문의</button></li>                            
+                            <li><button class="sidemenu_button_unchecked" type="button"
+                                    onclick="location.href='support1.html'">공지사항</button></li>
+                            <li><button class="sidemenu_button_checked" type="button"
+                                    onclick="location.href='support2.html'">온라인문의</button></li>
 
                         </ul>
                     </div>
@@ -126,11 +152,11 @@
                     </div>
                     <div class=call_area_button>
                         <button type="button" onclick="location.href='support2.html'">온라인문의</button>
-                    </div>   
-                </div>      
+                    </div>
+                </div>
             </div>
             <div class="content_area">
-                <div class ="content_top_nav">
+                <div class="content_top_nav">
                     <a href="index.html">HOME</a> ＞
                     <a href="support1.html">고객지원</a> ＞
                     <a href="support2.html">온라인 문의</a>
@@ -138,54 +164,62 @@
                 <div class="contetn_detail">
                     <h3 class="content_detail_title"><br>온라인문의</h3>
                     <div class="content_form_area">
-                        <form class="question_form" action="#" method="post">
-                            <br> 
+                        <form class="question_form" action="support2_read.html" method="post">
+                            <br>
                             <table class="form_table">
                                 <tr>
                                     <th><label>이름</label></th>
-                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="이름"></td>
-                                
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text" value
+                                            required placeholder="이름"></td>
+
                                     <th><label>비밀번호</label></th>
-                                    <td><input type="password" class="form_requierd" autocomplete="off" type="text"value required placeholder="비밀번호"></td>
-                                </tr>                                
+                                    <td><input type="password" class="form_requierd" autocomplete="off" type="text"
+                                            value required placeholder="비밀번호"></td>
+                                </tr>
                                 <tr>
                                     <th><label>회사</label></th>
-                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="회사"></td>
-                                
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text" value
+                                            required placeholder="회사"></td>
+
                                     <th><label>전화번호</label></th>
-                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="전화번호"></td>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text" value
+                                            required placeholder="전화번호"></td>
                                 </tr>
                                 <tr>
                                     <th><label>이메일</label></th>
-                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text"value required placeholder="이메일"></td>
-                                   
-                                   
-                                </tr>                                
-                            </table>
-                            <br> 
-                            <table class="form_table">
-                                <tr>
-                                    <th><label>제목</label></th>
-                                    <td  class="form_title"><input class="form_requierd2" autocomplete="off" type="text"value required placeholder="제목"></td>
-                                </tr>
-                                <tr>
-                                    <th><label>내용</label></th>
-                                    <td colspan="3"><textarea class="form_requierd2"  rows="20" cols="80" type="text"value required placeholder="내용"></textarea></td>
+                                    <td><input type="text" class="form_requierd" autocomplete="off" type="text" value
+                                            required placeholder="이메일"></td>
+
+
                                 </tr>
                             </table>
                             <br>
-                            <div class="button_area">                                                               
+                            <table class="form_table">
+                                <tr>
+                                    <th><label>제목</label></th>
+                                    <td class="form_title"><input class="form_requierd2" autocomplete="off" type="text"
+                                            value required placeholder="제목"></td>
+                                </tr>
+                                <tr>
+                                    <th><label>내용</label></th>
+                                    <td colspan="3"><textarea class="form_requierd2" rows="20" cols="80" type="text"
+                                            value required placeholder="내용"></textarea></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <div class="button_area">
                                 <button type="submit" class="btn_submit">작성완료</button>
-                                <button type="button" class="btn_cancel" onclick="location.href='support2.html'">취소</button>
+                                <button type="button" class="btn_cancel"
+                                    onclick="location.href='support2.html'">취소</button>
                             </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
-		<footer>
+        <footer>
             <div class="footer_logo"><img src="logo.png" alt="logo" width="200px"></div>
             <div class="footer_text">
                 <div>
@@ -195,12 +229,12 @@
                     사업자 등록번호 : 759-26-00120 / 대표자 : 이재철 / 전화 : 031-889-0177 / E-mail : ljc0415@naver.com<br>
 
                     Copyright (C) KRIMPA All Right Reserved.
-                </div>            
-                    
+                </div>
+
             </div>
         </footer>
-	</div>
-       <!-- 제이쿼리 불러오기 -->
+    </div>
+    <!-- 제이쿼리 불러오기 -->
 </body>
-</html>
 
+</html>
