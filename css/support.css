@@ -566,18 +566,36 @@ thead {
 .pagebtn ul li {
   list-style: none;
   float: left;
-  width: 25px;
-  text-align: center;
+  width: 40px;
+  /* text-align: center; */
   background-color: rgb(241, 241, 241);
-  padding: 1%;
+  /* padding: 1%; */
   margin: 5px;
+  height: 40px;
   /* text-decoration: none; */
 }
-.pagebtn a {
+.pagination button {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+.pagination a {
   /* list-style: none; */
   text-decoration: none;
   float: none;
   display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.pagebtn a:hover {
+  /* list-style: none; */
+  text-decoration: none;
+  /* float: none; */
+  /* display: block; */
+  background-color: rgb(210, 210, 255);
+  width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 1400px) {
