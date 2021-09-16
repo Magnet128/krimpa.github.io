@@ -375,32 +375,126 @@ footer div {
   width: 60%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .menu {
     width: 70%;
   }
   .dropdown-sub {
     width: 70%;
   }
+
+  .notice_area {
+    float: none;
+    visibility: hidden;
+  }
+  .middle_area {
+    float: none;
+    display: flex;
+    width: 90%;
+  }
+  .call_area {
+    width: 90%;
+    float: none;
+  }
+  .analysis_area {
+    width: 90%;
+    float: none;
+    margin-left: 1%;
+    margin-bottom: 0px;
+  }
+
+  .call_area_title {
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+
+  .call_area_text {
+    font-size: 27px;
+  }
+
+  .call_area_text2 {
+    font-size: 16px;
+  }
+
+  .slide-img,
+  .slide-img img {
+    height: 20em;
+  }
 }
 
 /* 화면 너비 0 ~ 1200px */
 @media (max-width: 1200px) {
+  .slide-img,
+  .slide-img img {
+    height: 15em;
+  }
 }
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px) {
-  .middle_area {
-    float: none;
-  }
   footer {
     float: none;
+    display: inherit;
+    text-align: center;
+  }
+  .slide-img,
+  .slide-img img {
+    height: 10em;
+  }
+  /* footer div {
+    float: none;
+    text-align: center;
+    display: inherit;
+  } */
+  .footer_text {
+    float: none;
+    padding: 0px;
+    width: 90%;
+  }
+
+  .footer_logo {
+    float: none;
+    font-size: 2;
+    padding: 0px;
+    width: 90%;
+    display: inherit;
+  }
+
+  .middle_area {
+    float: none;
+    display: inherit;
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  .call_area_title {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+
+  .call_area_text {
+    font-size: 30px;
+  }
+
+  .call_area_text2 {
+    font-size: 16px;
+  }
+
+  .call_area {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .analysis_area {
+    width: 80%;
   }
 }
 
 /* 화면 너비 0 ~ 480px */
 @media (max-width: 480px) {
-  .header {
-    height: 300px;
+  .slide-img,
+  .slide-img img {
+    height: 10em;
   }
 }
