@@ -273,7 +273,7 @@
 
 .call_area_text {
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(94, 94, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -309,6 +309,11 @@
   padding-left: 6%;
   padding-right: 6%;
   font-size: 20px;
+}
+
+.content_detail_list image {
+  display: flex;
+  width: 100%;
 }
 
 .content_detail_title {
