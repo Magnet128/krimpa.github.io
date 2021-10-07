@@ -552,4 +552,10 @@ footer div {
     display: inherit;
     width: 90%;
   }
+
+  .content_detail_list {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+  }
 }
