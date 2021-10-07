@@ -6,7 +6,7 @@
     <title>한국소재물성평가원</title>
     <link rel="stylesheet" href="css/support.css" />
     <!-- <link rel="stylesheet" href="css/table.css"/> -->
-
+    <link rel="stylesheet" href="css/right_menu_btn.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -59,6 +59,51 @@
                         <li><a href="#"> </a></li>
                     </ul>
                 </div>
+            </div>
+            <label class="nav_btn" for="opener">MENU</label>
+            <input class="opener" type="checkbox" id="opener">
+            <!-- <input class="opener" type="checkbox" id="opener">         -->
+            <div class="nav_item">
+                
+                <ul class="nav_menu_list">
+                    <li class="nav_list1">
+                        <h3>회사소개</h3>
+                        <ul class="list1_sub">
+                            <li style="background-color: gainsboro;"><a href="company_info.html">인사말</a></li>
+                            <li style="background-color: gainsboro;"><a href="company_info2.html">오시는 길</a></li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li class="nav_list2">
+                        <h3>사업분야</h3>
+                        <ul class="list2_sub">
+                            <li style="background-color: gainsboro;"><a href="business_all.html?value=0">Failure Analysis</a></li>
+                            <li style="background-color: gainsboro;"><a href="business_all.html?value=1">XPS</a></li>
+                            <li style="background-color: gainsboro;"><a href="business_all.html?value=2">SIMS</a></li>
+                            <li style="background-color: gainsboro;"><a href="business_all.html?value=3">공동연구</a></li>
+                            <li style="background-color: gainsboro;"><a href="business_all.html?value=4">전문인력 위탁교육</a></li>
+                        </ul>
+                        <br>
+                    </li>
+
+                    <li class="nav_list3">
+                        <h3>분석의뢰</h3>
+                        <ul class="list3_sub">
+                            <li style="background-color: gainsboro;"><a href="analysis1.html">분석의뢰 절차</a></li>
+                            <li style="background-color: gainsboro;"><a href="analysis2.html">분석요금</a></li>
+                            <li style="background-color: gainsboro;"><a href="analysis3.html">분석신청</a></li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li class="nav_list4">
+                        <h3>고객지원</h3>
+                        <ul class="list4_sub">
+                            <li style="background-color: gainsboro;"><a href="support1.html">공지사항</a></li>
+                            <li style="background-color: gainsboro;"><a href="support2.html">온라인 문의</a></li>                                    
+                        </ul>
+                    </li>
+
+                </ul>
             </div>
             <div class="menu_area">
                 <div class="logo" onclick="location.href='index.html'">
@@ -226,7 +271,117 @@
     </div>
 
     
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+        import * as firebase from "https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js";
+//   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+       // import { getAnalytics } from "firebase/analytics";
+       // TODO: Add SDKs for Firebase products that you want to use
+       // https://firebase.google.com/docs/web/setup#available-libraries
 
+       // Your web app's Firebase configuration
+       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+       const firebaseConfig = {
+           apiKey: "AIzaSyDKkOKCT-hb68OEnzkLcEmGxqKqwB6MKIc",
+           authDomain: "krimpa-fcb08.firebaseapp.com",
+           projectId: "krimpa-fcb08",
+           storageBucket: "krimpa-fcb08.appspot.com",
+           messagingSenderId: "276850076529",
+           appId: "1:276850076529:web:99f396fe3bcd8b0132e4d0",
+           measurementId: "G-D4TW7KK9HJ"
+       };
+
+       // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+       var db = firebase.getDatabase();
+       const starCountRef = firebase.ref(db, 'database/questionlist/');
+       firebase.onValue(starCountRef, (snapshot) => {
+           const data = snapshot.val();
+
+           // const aMap = new Map(data);
+           var keys = Object.keys(data);
+
+           var list_body = document.getElementById("list_body");
+           
+           // list_body.removeChild();
+           var len = Object.keys(data).length;
+           
+           if(Object.keys(data).length > 10)
+           {                
+               if(Object.keys(data).length % 10 == 0)
+               {
+                   total_pages = parseInt(Object.keys(data).length / 10);
+               }
+               else {
+                   total_pages = parseInt(Object.keys(data).length / 10) + 1;
+               }   
+               
+               var pagenation = document.getElementById("pagination");
+
+               var newpagebtn = document.createElement("li");
+               newpagebtn.innerHTML = '<button type="button" onclick='+ '"location.href="#"">◀</button>';
+               pagenation.appendChild(newpagebtn);
+
+               for(let i=1;i<total_pages+1;i++)
+               {
+                   var newpagebtn = document.createElement("li");
+                   newpagebtn.innerHTML = '<a href="#">' + i + '</a>';
+                   pagenation.appendChild(newpagebtn);
+               }
+
+               var newpagebtn = document.createElement("li");
+               newpagebtn.innerHTML = '<a href="#">▶</a>';
+               pagenation.appendChild(newpagebtn);
+               
+           }
+           else {
+               len = Object.keys(data).length;                             
+           }            
+           
+           for(let i=1;i<11;i++)
+           {
+               // let idx = i;
+               let idx = len - ((pagenumber-1)*10 + i);
+               if(idx < 0)
+               {
+                   break;
+               }
+               console.log(idx);
+               var newtr = document.createElement("tr");
+               newtr.style = "cursor:pointer;";
+               newtr.onclick = "location.href='support2_pw.html'";
+
+               //번호
+               var numbertd = document.createElement("td");
+               numbertd.className = "tabel_number";
+               // var str = keys[i].split('-')[1];
+               // console.log(str);
+               numbertd.innerHTML = keys[idx];
+               newtr.appendChild(numbertd);
+
+               //제목
+               var titletd = document.createElement("td");
+               titletd.className = "table_title";
+               titletd.innerHTML = data[keys[idx]]['title'] + '<image src="image/lock.png" style="width: 15px;">';
+               newtr.appendChild(titletd);
+
+               //작성자
+               var nametd = document.createElement("td");
+               nametd.className = "table_name";
+               nametd.innerHTML = data[keys[idx]]['name'];
+               newtr.appendChild(nametd);
+
+               //작성날짜
+               var datetd = document.createElement("td");
+               datetd.className = "table_date";
+               datetd.innerHTML = data[keys[idx]]['date'];
+               newtr.appendChild(datetd);
+
+               list_body.appendChild(newtr);              
+               
+           }            
+       });
     </script>
 </body>
 
