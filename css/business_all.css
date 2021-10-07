@@ -517,10 +517,6 @@ footer div {
     float: none;
     padding-left: 0%;
   }
-  .top_image,
-  .top_image img {
-    height: 10em;
-  }
   .sidemenu_area {
     display: none;
   }
@@ -547,5 +543,9 @@ footer div {
   .footer_logo {
     display: inherit;
     width: 90%;
+  }
+
+  .content_image img {
+    width: 360px;
   }
 }

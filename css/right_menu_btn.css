@@ -8,13 +8,18 @@
 }
 
 @media (max-width: 600px) {
+  .nav_btn {
+    margin-top: 4%;
+  }
 }
 
 @media (max-width: 810px) {
-    html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
   }
+
   .menu_area {
     display: none;
   }
