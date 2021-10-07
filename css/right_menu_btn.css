@@ -14,11 +14,6 @@
 }
 
 @media (max-width: 810px) {
-  html,
-  body {
-    max-width: 100%;
-  }
-
   .menu_area {
     display: none;
   }
