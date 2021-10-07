@@ -14,6 +14,11 @@
 }
 
 @media (max-width: 810px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .menu_area {
     display: none;
   }
