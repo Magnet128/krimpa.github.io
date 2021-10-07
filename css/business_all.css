@@ -470,25 +470,82 @@ footer div {
   .dropdown-sub {
     width: 70%;
   }
+
+  .logo {
+    display: none;
+  }
+  .menu_area {
+    padding-left: 0px;
+  }
+  .menu {
+    margin-left: 16%;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* 화면 너비 0 ~ 1200px */
 @media (max-width: 1200px) {
+  .top_image,
+  .top_image img {
+    height: 15em;
+  }
+  .top_image,
+  .top_image img {
+    height: 10em;
+  }
+  .sidemenu_area {
+    display: none;
+  }
+  .content_area {
+    width: 95%;
+  }
+  .middle_area {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /* 화면 너비 0 ~ 768px */
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .middle_area {
     float: none;
   }
   footer {
     float: none;
+    padding-left: 0%;
   }
-}
+  .top_image,
+  .top_image img {
+    height: 10em;
+  }
+  .sidemenu_area {
+    display: none;
+  }
+  .content_area {
+    width: 95%;
+  }
+  .middle_area {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-/* 화면 너비 0 ~ 480px */
-@media (max-width: 480px) {
   .header {
-    height: 300px;
+    height: 100px;
+  }
+  .top-menu {
+    height: 30%;
+  }
+
+  .top_image,
+  .top_image img {
+    height: 8em;
+  }
+  .footer_text,
+  .footer_logo {
+    display: inherit;
+    width: 90%;
   }
 }

@@ -3,9 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
 }
 /* 
+html,
 body {
   overflow-x: hidden;
 } */
@@ -101,6 +101,7 @@ body {
   /* padding-top: 1%;
   padding-bottom: 1%; */
   transition: 100ms;
+  /* overflow-x: hidden; */
 }
 
 .dropdown-sub {
@@ -512,8 +513,30 @@ footer div {
   }
 }
 
+@media (max-width: 810px) {
+  .slide-img,
+  .slide-img img {
+    height: 12em;
+  }
+}
+
 /* 화면 너비 0 ~ 480px */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .header {
+    height: 100px;
+  }
+  .top-menu {
+    height: 30%;
+  }
+  .menu_area {
+    display: none;
+  }
+  .footer_text,
+  .footer_logo {
+    display: inherit;
+    width: 90%;
+  }
+
   .slide-img,
   .slide-img img {
     height: 10em;
