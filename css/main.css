@@ -39,7 +39,7 @@ body {
 .top-menu ul li {
   list-style: none;
   float: right;
-  width: 120px;
+  width: 100px;
   text-align: center;
   padding-top: 2px;
   display: block;
@@ -443,13 +443,9 @@ footer div {
     height: 40px;
   }
 
-  .top-menu {
-    font-size: 25px;
-  }
-
-  .top-menu ul li {
+  /* .top-menu ul li {
     width: 150px;
-  }
+  } */
 
   .logo {
     display: none;
@@ -494,17 +490,18 @@ footer div {
   }
 
   .call_area_text {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .call_area_text2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .call_area {
     width: 80%;
     text-align: center;
     margin-bottom: 2%;
+    height: 90%;
   }
   .analysis_area {
     width: 80%;
@@ -514,22 +511,22 @@ footer div {
 }
 
 @media (max-width: 810px) {
+  .header {
+    height: 100px;
+  }
   .slide-img,
   .slide-img img {
     height: 12em;
-  }
-}
-
-/* 화면 너비 0 ~ 480px */
-@media (max-width: 600px) {
-  .header {
-    height: 100px;
   }
   .top-menu {
     height: 30%;
   }
   .menu_area {
     display: none;
+  }
+  .top_image,
+  .top_image img {
+    height: 8em;
   }
   .footer_text,
   .footer_logo {
@@ -540,5 +537,12 @@ footer div {
   .slide-img,
   .slide-img img {
     height: 10em;
+  }
+
+  .call_area {
+    height: 80%;
+  }
+  .analysis_area {
+    height: 80%;
   }
 }
