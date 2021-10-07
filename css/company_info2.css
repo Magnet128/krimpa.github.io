@@ -291,12 +291,14 @@
 .map_area {
   /* position: absolute; */
   width: 60%;
-  height: 400px;
+  /* height: 400px; */
   /* height: 100px; */
   margin-top: 3%;
   padding-left: 10%;
   margin-right: 5%;
   /* margin-bottom: 3%; */
+  display: flex;
+  vertical-align: middle;
 }
 
 .map_content {
@@ -560,6 +562,14 @@ footer div {
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
+  }
+
+  /* .menu_area img {
+    height: 300px;
+  } */
+
+  .map {
+    height: 300px;
   }
 
   .map_address {
