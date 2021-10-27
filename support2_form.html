@@ -194,6 +194,19 @@
                         평일 오전 9시 ~ 오후 6시<br>
                         (주말, 공휴일 휴무)
                     </div>
+                    <div class="contact_area">
+                        <h4>
+                            연락처를 남겨주시면<br>빠르게 연락드립니다.
+                        </h4>
+                        
+                        <div class="name_phone">
+                            <input class="contact_name" id="c_name" type="text" placeholder="성함(회사명)">
+                            <input class="contact_phone" id="c_phone" type="text" placeholder="연락처">
+                        </div>
+    
+                        
+                        <button class="contact_btn" onclick="writecontactData()">보내기</button>
+                    </div>
                     <div class=call_area_button>
                         <button type="button" onclick="location.href='support2.html'">온라인문의</button>
                     </div>
@@ -282,3 +295,8 @@
 </body>
 
 </html>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<script src="src/contact.js"></script>
