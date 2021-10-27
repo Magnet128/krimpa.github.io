@@ -235,7 +235,7 @@
 }
 .call_area_button {
   width: 100%;
-  height: 30%;
+  height: 40%;
   margin-top: 2%;
 
   /* float: left; */
@@ -246,22 +246,50 @@
 
 .call_area_button button {
   width: 80%;
-  height: 80%;
+  height: 50px;
   border: 2px solid rgb(0, 0, 0);
   background-color: rgb(125, 125, 255);
-  border-radius: 15px;
+  border-radius: 12px;
   color: white;
   font-size: 20px;
 }
 
 .call_area_button button:hover {
   width: 80%;
-  height: 80%;
+  height: 50px;
   background-color: rgb(94, 94, 255);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
   color: white;
   font-size: 20px;
+}
+
+.contact_area {
+  padding: 10px;
+
+  /* position: fixed; */
+  /* right: 10px; */
+  /* bottom: 150px; */
+  /* height: 150px; */
+  width: 250px;
+  text-align: center;
+}
+.contact_btn {
+  margin-top: 2%;
+  width: 150px;
+  font-size: 15px;
+  height: 40px;
+}
+
+.name_phone input {
+  font-size: 15px;
+  padding: 5px;
+  margin: 1%;
+}
+
+.contact_area div {
+  margin: 1%;
+  padding: 1%;
 }
 
 .call_area_title {
@@ -578,7 +606,6 @@ footer div {
     padding-right: 0px;
     width: 100%;
     height: 400px;
-
     margin-bottom: -12%;
   }
 
